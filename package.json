@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
-    "compile:sass": "sass public/sass/main.scss public/css/style.css",
-    "start": "node src/index.js"
+    "compile:sass": "sass public/sass/main.scss public/css/style.css"
   },
   "keywords": [],
   "author": "",
