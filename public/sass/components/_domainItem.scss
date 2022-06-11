@@ -1,0 +1,76 @@
+/* Domain section */
+.domain {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6rem;
+    z-index: 5;
+    position: relative;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30rem;
+
+
+        & p {
+            width: 40rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+    }
+}
+  
+.domain__icon {
+    width: 60px;
+    fill: rgb(29, 64, 25);
+    height: 40px;
+}
+  
+.domain--header {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(29, 64, 25);
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 2rem 0;
+}
+
+@media (max-width: 950px) {
+    .domain__item p {
+        width: 30rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .domain {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__item {
+            &:nth-child(1) {
+                margin-bottom: 4.5rem;
+            }
+
+            & p {
+                width: 40rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 525px) {
+    .domain__item p {
+        width: 35rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .domain__item p {
+      width: 32rem;
+      font-size: 1.3rem;
+    }
+}

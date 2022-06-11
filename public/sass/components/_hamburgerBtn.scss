@@ -1,0 +1,75 @@
+/* hamburger menu button */
+.menu-btn {
+    z-index: 600;
+    position: fixed;
+    top: 5%;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    background-color: transparent;
+    z-index: 600;
+
+    &__burger {
+        width: 40px;
+        height: 4px;
+        background: #023430;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(78, 78, 78, 0.5);
+        transition: all 0.5s ease-in-out;
+        z-index: 600;
+
+        &::before {
+            transform: translateY(32px);
+            z-index: 600;
+        }
+
+        &::after {
+            transform: translateY(16px);
+            z-index: 600;
+        }
+    }
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: #023430;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(78, 78, 78, 0.5);
+    transition: all 0.5s ease-in-out;
+    z-index: 600;
+}
+  
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+    z-index: 600;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+    z-index: 600;
+}
+
+.menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+    z-index: 500;
+}
+
+.hidden-btn {
+    display: none;
+}
+
+@media (max-width: 1025px) {
+    .hidden-btn {
+        display: block;
+    }
+
+}

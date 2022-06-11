@@ -1,0 +1,24 @@
+{{#each option}}
+<div class="hide-element option" data-id="hidden-element">
+    <div class="option--content">
+        <h6 id="sub--description">{{subtitle}}</h6>
+        <br>
+        <br>
+        <h5>{{title}}</h5>
+        <p>
+            {{description}}
+            <br>
+            <br>
+            <span>Price: $125</span>
+            <br>
+        </p>
+        <p id="bold">Click to see an example!</p>
+        <div class="example__link">
+            <a href="https://lindalowery.herokuapp.com/">Example 1</a>
+        </div>
+        {{!-- <svg class="option__icon">
+            <use xlink:href="/img/sprite2.svg#icon-document"></use>
+        </svg> --}}
+    </div>
+</div>
+{{/each}}

@@ -1,0 +1,23 @@
+<div class="icon__container">
+    {{#each data}}
+    <div class="hide-element icon__container-item" data-id="hidden-element">
+        <svg class="option__icon">
+            <use xlink:href="/img/sprite.svg#{{icon}}" id="media-icon"></use>
+        </svg>
+        <h2>{{title}}</h2>
+        <p>
+            {{description}}
+        </p>
+    </div>
+    {{/each}}
+</div>
+
+<div class="hide-icon icon__container-item-bottom hide-element" data-id="hidden-element">
+    <svg class="option__icon">
+        <use xlink:href="/img/sprite.svg#icon-profile-male" id="media-icon"></use>
+    </svg>
+    <h2>In-depth intro</h2>
+    <p>
+        Provide a more detailed introduction so hiring managers can get a better understanding of who you are                  
+    </p>
+</div>

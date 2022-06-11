@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.section {
+    padding: 12.5rem 0;
+}
+
+hr {
+    width: 75vw;
+    color: black;
+    margin: 0 auto;
+}
+
+@media (max-width: 550px) {
+    .section {
+        padding: 10rem 0;
+    }
+}

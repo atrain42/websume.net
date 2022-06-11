@@ -1,0 +1,176 @@
+#updates {
+  position: relative;
+}
+
+.update__content {
+  position: relative;
+  width: 62.5vw;
+  border-radius: 40px;
+  box-shadow: 0px 0px 10px 0px rgba(76, 76, 76, 0.566);
+  background-color: white;
+  padding-left: 30rem;
+  margin: 10rem auto;
+  margin-bottom: 0rem;
+  margin-left: 26%;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  & h3 {
+    font-family: "BIZ UDPMincho", serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(104, 228, 90);
+    margin-bottom: 3rem;
+  }
+
+  & h2 {
+    font-size: 2.8rem;
+    color: rgb(80, 80, 80);
+  }
+
+  & p {
+    font-size: 2rem;
+    width: 35vw;
+    line-height: 1.4;
+    padding-right: 2rem;
+  }
+
+  & img {
+    position: absolute;
+    top: -25%;
+    left: -30%;
+    height: 50rem;
+    width: 50rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .update__content {
+    padding-left: 25rem;
+
+    & img {
+      height: 45rem;
+      width: 45rem;
+  
+    }
+  } 
+
+}
+
+@media (max-width: 1100px) {
+  .update__content {
+    padding-left: 5rem;
+    width: 75vw;
+    margin-left: 16%;
+
+    & h3 {
+      padding-left: 22.5rem;
+    }
+
+    & p {
+      font-size: 2rem;
+      width: 65vw;
+      line-height: 1.4;
+      padding-right: 1rem;
+    }
+
+    & img {
+      height: 35rem;
+      width: 35rem;
+      top: -32%;
+      left: -10%;
+  
+    }
+  } 
+
+}
+
+@media (max-width: 1100px) {
+  .update__content {
+
+    & h3 {
+      padding-left: 15rem;
+    }
+
+    & p {
+      font-size: 2rem;
+      width: 65vw;
+      line-height: 1.4;
+      padding-right: 1rem;
+    }
+
+    & img {
+      height: 25rem;
+      width: 25rem;
+      top: -15%;
+      left: -10%;
+    }
+  } 
+
+}
+
+@media (max-width: 675px) {
+  .update__content {
+
+    & p {
+      width: 60vw;
+    }
+
+    & h3 {
+      padding-left: 0rem;
+    }
+
+    & img {
+      height: 25rem;
+      width: 25rem;
+      top: -25%;
+      left: -10%;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .update__content {
+    padding-left: 2.5rem;
+
+    & h3 {
+      font-size: 2.5rem;
+    }
+
+    & p {
+      font-size: 1.75rem;
+      width: 67.5vw;
+    }
+
+    & img {
+      height: 20rem;
+      width: 20rem;
+      top: -17.5%;
+      left: -10%;
+    }
+  } 
+
+}
+
+@media (max-width: 400px) {
+  .update__content {
+
+    & h3 {
+      font-size: 2rem;
+    }
+
+    & p {
+      font-size: 1.5rem;
+      width: 67.5vw;
+      padding-right: 2rem;
+    }
+
+    & img {
+      height: 20rem;
+      width: 20rem;
+      top: -17.5%;
+      left: -10%;
+    }
+  } 
+
+}

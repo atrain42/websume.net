@@ -1,0 +1,15 @@
+#options {
+    position: relative;
+    width: 100vw;
+}
+
+.color--overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #a9e6ad;
+    height: 100%;
+    width: 100%;
+    clip-path: circle(450px at 350px 675px);
+}

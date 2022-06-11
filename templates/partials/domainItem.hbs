@@ -1,0 +1,13 @@
+<div class="domain">
+    {{#each domain}}
+    <div class="hide-element domain__item" data-id="hidden-element">
+        <svg class="domain__icon">
+            <use xlink:href="/img/sprite3.svg#{{icon}}"></use>
+        </svg>
+        <h7 class="domain--header">{{title}}</h7>
+        <p>
+        {{description}}
+        </p>
+    </div>
+    {{/each}}
+</div>

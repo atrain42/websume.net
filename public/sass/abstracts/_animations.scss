@@ -1,0 +1,52 @@
+.in-left {
+    opacity: 0;
+    transition: 1s;
+    transform: translateX(-10%);
+    z-index: 2;
+}
+
+.in-right {
+    opacity: 0;
+    transition: 1s;
+    transform: translateX(10%);
+    z-index: 2;
+}
+
+.merge {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 2;
+}
+
+.flip {
+    opacity: 0;
+    transition: 1s;
+    transform: rotateY(180deg)
+}
+
+.flip-reverse {
+    opacity: 1;
+    transition: 1s;
+    transform: rotateY(-180deg)
+}
+
+.hide-element {
+    opacity: 0;
+    transition: 1.5s;
+    z-index: 5;
+}
+
+.appear {
+    opacity: 1;
+}
+
+.small {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: 1.5s;
+}
+
+.scale {
+    opacity: 1;
+    transform: scale(1);
+}

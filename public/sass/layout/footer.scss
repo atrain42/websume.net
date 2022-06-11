@@ -1,0 +1,145 @@
+/* footer */
+.footer {
+    padding: 5rem 0;
+    background-color: #023430;
+    -webkit-clip-path: inset(10px round 80px 20px 30px 10px);
+    clip-path: inset(0px round 120px 120px 0px 0px);
+    position: relative;
+}
+  
+.footer__container {
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+#footer--image {
+    height: 45rem;
+    width: 45rem;
+}
+  
+.footer__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+footer h2 {
+    font-family: 'BIZ UDPMincho', serif;
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+    color: #eee;
+}
+  
+footer h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    color: #eee;
+}
+  
+.anchor__bin {
+    display: flex;
+    justify-content: flex-start;
+}
+  
+#contact--btn {
+    width: 15rem;
+    cursor: pointer;
+    padding: 1.3rem 1rem;
+    background-color: #48a65b;
+    transition: all 0.5s;
+    color: #eee;
+    font-size: 1.7rem;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+}
+  
+#contact--btn:hover {
+    border-radius: 20px;
+}
+  
+#copyright {
+    position: absolute;
+    bottom: 4%;
+    left: 15%;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #eee;
+    font-size: 1.5rem;
+}
+
+@media (hover: hover) {
+    #contact--btn:hover {
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 1125px) {
+    #footer--image {
+        height: 40rem;
+        width: 40rem;
+    }
+
+    footer h2 {
+        font-size: 4rem;
+    }
+
+    footer h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1025px) {
+    .footer {
+        -webkit-clip-path: inset(0px round 0px 0px 0px 0px);
+        clip-path: inset(0px round 0px 0px 0px 0px);
+    }
+
+    #footer--image {
+        height: 35vh;
+        width: 35vw;
+    }
+
+    footer h2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer--image {
+        height: 40rem;
+        width: 40rem;
+    }
+
+    #contact--btn {
+        margin: 0 auto;
+    }
+
+    footer h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 575px) {
+    footer h2 {
+        font-size: 2.75rem;
+    }
+
+    #footer--image {
+        height: 30rem;
+        width: 30rem;
+    }
+
+}
+
+@media (max-width: 475px) {
+    footer h2 {
+        font-size: 2.75rem;
+    }
+
+}
