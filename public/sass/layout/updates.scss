@@ -111,6 +111,7 @@
 
 @media (max-width: 675px) {
   .update__content {
+    margin-top: 15rem;
 
     & p {
       width: 60vw;
@@ -132,6 +133,7 @@
 @media (max-width: 550px) {
   .update__content {
     padding-left: 2.5rem;
+    margin-top: 10rem;
 
     & h3 {
       font-size: 2.5rem;

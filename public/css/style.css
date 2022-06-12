@@ -405,10 +405,10 @@ header {
 }
 @media (max-width: 550px) {
   .heading__container h1 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
   .heading__container p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 #about {
@@ -1353,6 +1353,9 @@ footer h3 {
   }
 }
 @media (max-width: 675px) {
+  .update__content {
+    margin-top: 15rem;
+  }
   .update__content p {
     width: 60vw;
   }
@@ -1369,6 +1372,7 @@ footer h3 {
 @media (max-width: 550px) {
   .update__content {
     padding-left: 2.5rem;
+    margin-top: 10rem;
   }
   .update__content h3 {
     font-size: 2.5rem;
@@ -1402,7 +1406,7 @@ footer h3 {
 }
 /* contact form */
 #contact {
-  margin-top: 5rem;
+  padding-top: 15rem;
   margin-bottom: 10rem;
 }
 
@@ -1460,8 +1464,9 @@ footer h3 {
 
 label {
   font-family: "Montserrat", serif;
-  font-size: 2.25rem;
+  font-size: 2rem;
   margin-right: 3rem;
+  margin-bottom: 3px;
 }
 
 select {
@@ -1484,8 +1489,16 @@ select {
   .contact__form textarea {
     width: 80vw;
   }
+
+  select {
+    width: 37.5vw;
+  }
 }
 @media (max-width: 550px) {
+  #contact {
+    padding-top: 10rem;
+  }
+
   .contact__form {
     padding-top: 5rem;
   }
@@ -1496,6 +1509,10 @@ select {
   .contact__form span input {
     width: 80vw;
     margin-bottom: 1.5rem;
+  }
+
+  select {
+    width: 80vw;
   }
 }
 @media (max-width: 400px) {

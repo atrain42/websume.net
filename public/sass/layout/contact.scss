@@ -1,6 +1,6 @@
 /* contact form */
 #contact {
-    margin-top: 5rem;
+    padding-top: 15rem;
     margin-bottom: 10rem;
 }
 
@@ -66,8 +66,9 @@
 
 label {
     font-family: 'Montserrat', serif;
-    font-size: 2.25rem;
+    font-size: 2rem;
     margin-right: 3rem;
+    margin-bottom: 3px;
 }
 
 select {
@@ -96,9 +97,16 @@ select {
             width: 80vw;
         }
     }
+
+    select {
+        width: 37.5vw;
+    }
 }
 
 @media (max-width: 550px) {
+    #contact {
+        padding-top: 10rem;
+    }
     .contact__form {
         padding-top: 5rem;
         & span {
@@ -110,6 +118,9 @@ select {
                 margin-bottom: 1.5rem;
             }
         }
+    }
+    select {
+        width: 80vw;
     }
 }
 
