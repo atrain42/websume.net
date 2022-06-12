@@ -57,12 +57,24 @@
   
 .example__link {
   text-align: left;
-  margin-top: 2rem;
+  margin-top: 4rem;
 
   & a {
     font-family: 'Montserrat', sans-serif;
-    color: rgb(73, 73, 73);
+    color: rgb(50, 50, 50);
     font-size: 2rem;
+    text-decoration: none;
+    border: 1px solid rgb(70, 70, 70);
+    padding: 1rem 1rem;
+    border-radius: 2px;
+    margin-right: 3rem;
+    transition: all .5s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #a9e6ad48;
+      border-radius: 5px;
+    }
   }
 }
 
@@ -72,10 +84,6 @@
   width: 100vw;
 }
 
-
-/* Media queries */
-
-  
 @media (max-width: 1225px) {
   .option {
     padding: 4rem 4rem;

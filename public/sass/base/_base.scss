@@ -3,6 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --button-width: 40px;
+    --button-height: calc(var(--button-width) * .8);
+    --rectangle-height: calc(var(--button-width) * .1);
+    --rectangle-radius: calc(var(--button-width) * .04);
+    --translate: calc(var(--button-width) * .17);
+    --transition: 0.65s;
+}
   
 html {
     font-size: 62.5%;
