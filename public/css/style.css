@@ -1342,6 +1342,7 @@ footer h3 {
   .update__content img {
     height: 45rem;
     width: 45rem;
+    top: -20%;
   }
 }
 @media (max-width: 1100px) {
@@ -1349,6 +1350,7 @@ footer h3 {
     padding-left: 5rem;
     width: 75vw;
     margin-left: 16%;
+    padding-top: 13rem;
   }
   .update__content h3 {
     padding-left: 22.5rem;
@@ -1360,32 +1362,16 @@ footer h3 {
     padding-right: 1rem;
   }
   .update__content img {
-    height: 35rem;
-    width: 35rem;
-    top: -32%;
-    left: -10%;
-  }
-}
-@media (max-width: 1100px) {
-  .update__content h3 {
-    padding-left: 15rem;
-  }
-  .update__content p {
-    font-size: 2rem;
-    width: 65vw;
-    line-height: 1.4;
-    padding-right: 1rem;
-  }
-  .update__content img {
-    height: 25rem;
-    width: 25rem;
-    top: -15%;
+    height: 32.5rem;
+    width: 32.5rem;
+    top: -22.5%;
     left: -10%;
   }
 }
 @media (max-width: 675px) {
   .update__content {
     margin-top: 15rem;
+    padding-top: 10rem;
   }
   .update__content p {
     width: 60vw;
