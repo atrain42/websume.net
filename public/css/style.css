@@ -99,6 +99,10 @@ header {
   }
 }
 @media (max-width: 755px) {
+  header {
+    padding-bottom: 10rem;
+  }
+
   .header__container {
     display: flex;
     flex-direction: column;
@@ -228,6 +232,12 @@ header {
     display: none;
   }
 }
+@media (max-width: 550px) {
+  #logo {
+    height: 10rem;
+    width: auto;
+  }
+}
 .overlay {
   width: 100vw;
   height: 100vh;
@@ -310,6 +320,26 @@ header {
 @media (max-width: 1025px) {
   .hidden-btn {
     display: block;
+  }
+}
+@media (max-width: 550px) {
+  .hidden-btn {
+    display: block;
+  }
+
+  .menu-btn__burger {
+    width: 32.5px;
+    height: 3px;
+  }
+  .menu-btn__burger::before {
+    width: 32.5px;
+    height: 3px;
+    transform: translateY(20px);
+  }
+  .menu-btn__burger::after {
+    width: 32.5px;
+    height: 3px;
+    transform: translateY(10px);
   }
 }
 .hamburger__anchors {
@@ -420,6 +450,12 @@ header {
   align-items: center;
 }
 
+@media (max-width: 755px) {
+  #about {
+    padding-top: 7.5rem;
+    padding-bottom: 0rem;
+  }
+}
 /* About Section */
 .icon__container {
   display: flex;

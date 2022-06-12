@@ -93,6 +93,9 @@ header {
  
   
 @media (max-width: 755px) {
+    header {
+        padding-bottom: 10rem;
+    }
     .header__container {
       display: flex;
       flex-direction: column;

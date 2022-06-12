@@ -7,3 +7,9 @@
     align-items: center;
 }
 
+@media (max-width: 755px) {
+    #about {
+        padding-top: 7.5rem;
+        padding-bottom: 0rem;
+    }
+}
