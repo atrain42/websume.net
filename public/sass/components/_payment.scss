@@ -1,6 +1,69 @@
+.price__container {
+    display: flex;
+    justify-content: space-around;
+    width: 75vw;
+    margin: 0 auto;
+    padding-top: 2rem;
+
+    &-item {
+        width: 30rem;
+        background-color: white;
+        box-shadow: 0px 0px 10px 0px rgba(76, 76, 76, 0.566);
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+
+        & h2 {
+            font-size: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        & h1 {
+            font-size: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 2.5rem;
+        }
+
+        & img {
+            height: 15rem;
+            width: 15rem;
+        }
+
+        & ul {
+            align-self: flex-start;
+            list-style: none;
+            padding-left: 2rem;
+
+            & li {
+                font-size: 1.75rem;
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+
+                &:nth-child(4) {
+                    margin-bottom: 0;
+                }
+
+            }
+
+        }
+    }
+}
+
+.checkmark {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: green;
+}
+
+// Payment icons styling
 #payment {
     width: 100vw;
-    padding: 5rem 0;
+    padding-top: 8rem;
 
     & h1 {
         font-family: 'BIZ UDPMincho', serif;
@@ -14,17 +77,25 @@
 .payment__container {
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
-
+  
 .icon {
     width: 75px;
     height: 75px;
     margin-right: 10rem;
 }
-
+  
 .icon:nth-child(4) {
     margin-right: 0rem;
+}
+  
+
+
+@media (max-width: 900px) {
+    .price__container {
+        width: 100%;
+    }
 }
 
 @media (max-width: 700px) {
@@ -38,6 +109,25 @@
         margin-right: 2rem;
     }
 
+    .price__container {
+        flex-direction: column;
+        align-items: center;
+
+        &-item {
+            &:nth-child(1) {
+                margin-bottom: 1.5rem;
+            }
+
+            &:nth-child(2) {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+
+    .price__container-item img {
+        height: 10rem;
+        width: 10rem;
+    }
 }
 
 @media (max-width: 600px) {
@@ -60,6 +150,12 @@
         height: 40px;
         margin-right: 4rem;
     }
+}
+
+@media (max-width: 400px) {
+    .price__container-item {
+        width: 75vw;
+    }
 
 }
 
@@ -75,6 +171,20 @@
         margin-right: 4rem;
     }
 
+}
+
+@media (max-width: 325px) {
+    .price__container-item {
+
+        & ul li {
+            font-size: 1.5rem;
+        }
+    }
+
+    .checkmark {
+        width: 15px;
+        height: 15px;
+    }
 }
 
 @media (max-width: 290px) {

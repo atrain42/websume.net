@@ -1,38 +1,12 @@
 import { HamburgerClass } from "./hamburgerAnimation.js";
-// const inLeft = document.querySelectorAll(".in-left");
-// const inRight = document.querySelectorAll(".in-right");
-
-// const headerObserver = new IntersectionObserver(
-//   function (entries, headerObserver) {
-//     entries.forEach((entry) => {
-//       if (!entry.isIntersecting) return;
-//       if (entry.isIntersecting) {
-//         if (folder) {
-//           entry.target.classList.add("unfold");
-//         }
-
-//         entry.target.classList.add("merge");
-//         headerObserver.unobserve(entry.target);
-//       }
-//     });
-//   },
-//   {
-//     threshold: 0.8,
-//   }
-// );
-
-// inRight.forEach((word) => {
-//   headerObserver.observe(word);
-// });
-// inLeft.forEach((word) => {
-//   headerObserver.observe(word);
-// });
-
-// Intersection observer on entire elements
 
 const hiddenElement = document.querySelectorAll(".hide-element");
 const scaledElement = document.querySelectorAll(".small");
 const scaler = document.querySelectorAll('[data-id="scaler"]');
+
+const inRight = document.querySelectorAll("#in-right");
+const inLeft = document.querySelectorAll("#in-left");
+const slider = document.querySelectorAll('[data-id="slider"]');
 
 const elementObserver = new IntersectionObserver(
   function (entries, elementObserver) {
@@ -41,6 +15,10 @@ const elementObserver = new IntersectionObserver(
       if (entry.isIntersecting) {
         if (scaler) {
           entry.target.classList.add("scale");
+        }
+        if (slider) {
+          entry.target.id = "";
+          entry.target.classList.add("merge");
         }
         entry.target.classList.add("appear");
         elementObserver.unobserve(entry.target);
@@ -58,4 +36,41 @@ hiddenElement.forEach((element) => {
 
 scaledElement.forEach((element) => {
   elementObserver.observe(element);
+});
+
+inRight.forEach((element) => {
+  elementObserver.observe(element);
+});
+
+inLeft.forEach((element) => {
+  elementObserver.observe(element);
+});
+
+//Lazy loading images
+const images = document.querySelectorAll("[data-src]");
+
+function preloadImage(img) {
+  const src = img.getAttribute("data-src");
+  if (!src) return;
+
+  img.src = src;
+}
+
+const imgOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px 300px 0px",
+};
+
+const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    if (entry.isIntersecting) {
+      preloadImage(entry.target);
+      imgObserver.unobserve(entry.target);
+    }
+  });
+}, imgOptions);
+
+images.forEach((image) => {
+  imgObserver.observe(image);
 });

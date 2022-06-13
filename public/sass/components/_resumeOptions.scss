@@ -133,6 +133,13 @@
   
 }
 
+@media (max-width: 550px) {
+  .example__link a {
+    font-size: 1.75rem;
+    padding: 0.75rem 0.75rem;
+  }
+}
+
 @media (max-width: 440px) {
   .option {
     padding: 4rem 2rem;
