@@ -7,14 +7,14 @@
     z-index: 420;
     position: fixed;
     top: 0;
-    left: 0;
-    z-index: 99;
+    right: 0;
+    z-index: 501;
 
     &-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-around;
         height: 75vh;
 
@@ -26,6 +26,10 @@
             &:hover {
                 color: #c2d0cb;
             }
+        }
+
+        & hr {
+            width: 100%;
         }
     }
 
@@ -43,8 +47,19 @@
 }
 
 .hidden-menu {
-    display: none;
+    opacity: 0;
+    transform: translateX(10%);
+    transition: all 1s;
+
 }
+
+.unhide-menu {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s;
+
+}
+
 @media (max-width: 500px) {
     .hamburger__anchors-content a {
         font-size: 3rem;

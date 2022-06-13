@@ -34,6 +34,8 @@
 
 .rectangle--top.open {
     transform: translateX(var(--translate)) rotate(45deg);
+    background: rgb(227, 227, 227);
+
 }
 
 .rectangle--middle {
@@ -45,6 +47,7 @@
 
 .rectangle--middle.open {
     transform: translatey(-50%) rotate(-45deg);
+    background: rgb(227, 227, 227);
 }
 
 .rectangle--bottom {
@@ -55,6 +58,7 @@
 
 .rectangle--bottom.open {
     transform: translateX(calc(-1 * var(--translate))) rotate(45deg);
+    background: rgb(227, 227, 227);
 }
 
 .menu-button-hidden {

@@ -14,7 +14,7 @@ export class HamburgerClass {
   }
 
   _toggleHidden() {
-    hamburgerMenu.classList.toggle("hidden-menu");
+    hamburgerMenu.classList.toggle("unhide-menu");
     menuBtn
       .querySelectorAll("span")
       .forEach((span) => span.classList.toggle("open"));
