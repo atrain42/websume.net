@@ -295,7 +295,6 @@ header {
 
 .rectangle--top.open {
   transform: translateX(var(--translate)) rotate(45deg);
-  background: rgb(227, 227, 227);
 }
 
 .rectangle--middle {
@@ -307,7 +306,6 @@ header {
 
 .rectangle--middle.open {
   transform: translatey(-50%) rotate(-45deg);
-  background: rgb(227, 227, 227);
 }
 
 .rectangle--bottom {
@@ -318,7 +316,6 @@ header {
 
 .rectangle--bottom.open {
   transform: translateX(calc(-1 * var(--translate))) rotate(45deg);
-  background: rgb(227, 227, 227);
 }
 
 .menu-button-hidden {
@@ -331,7 +328,7 @@ header {
   }
 }
 .hamburger__anchors {
-  width: 75vw;
+  width: 55vw;
   height: 100vh;
   background-color: #374742;
   padding: 2rem 5rem;
@@ -339,8 +336,16 @@ header {
   z-index: 420;
   position: fixed;
   top: 0;
-  right: 0;
-  z-index: 501;
+  left: 0;
+  z-index: 499;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hamburger__anchors h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #eee;
+  font-size: 1.5rem;
 }
 .hamburger__anchors-content {
   display: flex;
@@ -349,6 +354,7 @@ header {
   align-items: flex-start;
   justify-content: space-around;
   height: 75vh;
+  padding-top: 15rem;
 }
 .hamburger__anchors-content a {
   text-decoration: none;
@@ -374,7 +380,7 @@ header {
 
 .hidden-menu {
   opacity: 0;
-  transform: translateX(10%);
+  transform: translateX(-100%);
   transition: all 1s;
 }
 
@@ -683,6 +689,7 @@ header {
 .example__link {
   text-align: left;
   margin-top: 4rem;
+  z-index: 5;
 }
 .example__link a {
   font-family: "Montserrat", sans-serif;
@@ -705,6 +712,11 @@ header {
   display: flex;
   justify-content: center;
   width: 100vw;
+}
+
+#bold {
+  font-style: italic;
+  font-weight: 500;
 }
 
 @media (max-width: 1225px) {
@@ -749,6 +761,17 @@ header {
     font-size: 1.75rem;
     padding: 0.75rem 0.75rem;
   }
+  .example__link a:nth-child(1) {
+    margin-right: 1.5rem;
+  }
+  .example__link a:nth-child(2) {
+    margin-right: 0rem;
+  }
+}
+@media (max-width: 475px) {
+  .example__link {
+    text-align: center;
+  }
 }
 @media (max-width: 440px) {
   .option {
@@ -760,6 +783,12 @@ header {
     font-size: 2.7rem;
   }
 }
+@media (max-width: 400px) {
+  .example__link a {
+    font-size: 1.5rem;
+    padding: 0.5rem 0.5rem;
+  }
+}
 @media (max-width: 370px) {
   .option h5 {
     font-size: 2.2rem;
@@ -768,9 +797,15 @@ header {
   .option--content p {
     font-size: 1.4rem;
   }
-
+}
+@media (max-width: 325px) {
   .example__link a {
-    font-size: 1.7rem;
+    font-size: 1.25rem;
+    padding: 0.25rem 0.25rem;
+  }
+
+  #bold {
+    font-size: 1.25rem;
   }
 }
 @media (max-width: 300px) {
@@ -783,10 +818,6 @@ header {
 
   .option--content p {
     font-size: 1.4rem;
-  }
-
-  .example__link a {
-    font-size: 1.7rem;
   }
 }
 #domain {

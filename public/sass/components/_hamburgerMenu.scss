@@ -1,5 +1,5 @@
 .hamburger__anchors {
-    width: 75vw;
+    width: 55vw;
     height: 100vh;
     background-color: #374742;
     padding: 2rem 5rem;
@@ -7,8 +7,17 @@
     z-index: 420;
     position: fixed;
     top: 0;
-    right: 0;
-    z-index: 501;
+    left: 0;
+    z-index: 499;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & h1 {
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #eee;
+        font-size: 1.5rem;
+    }
 
     &-content {
         display: flex;
@@ -17,6 +26,7 @@
         align-items: flex-start;
         justify-content: space-around;
         height: 75vh;
+        padding-top: 15rem;
 
         & a {
             text-decoration: none;
@@ -48,7 +58,7 @@
 
 .hidden-menu {
     opacity: 0;
-    transform: translateX(10%);
+    transform: translateX(-100%);
     transition: all 1s;
 
 }
