@@ -403,6 +403,11 @@ header {
   transition: all 1s;
 }
 
+@media (max-width: 550px) {
+  .hamburger__anchors-content {
+    padding-top: 10rem;
+  }
+}
 @media (max-width: 500px) {
   .hamburger__anchors-content a {
     font-size: 3rem;

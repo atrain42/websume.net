@@ -70,10 +70,15 @@
 
 }
 
+@media (max-width: 550px) {
+    .hamburger__anchors-content {
+        padding-top: 10rem;
+    }
+}
+
 @media (max-width: 500px) {
     .hamburger__anchors-content a {
         font-size: 3rem;
-
     }
 }
 
@@ -86,6 +91,5 @@
 @media (max-width: 400px) {
     .hamburger__anchors-content a {
         font-size: 2.75rem;
-
     }
 }
