@@ -661,6 +661,7 @@ header {
   position: relative;
   width: 100vw;
   max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .color--overlay {
@@ -1163,6 +1164,11 @@ header {
     font-size: 1.25rem;
   }
 }
+#payments {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 .price__container {
   display: flex;
   justify-content: space-around;
