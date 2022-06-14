@@ -1,6 +1,7 @@
 #payments {
     max-width: 100vw;
     overflow-x: hidden;
+    position: relative;
 }
 
 .price__container {
@@ -20,6 +21,7 @@
         align-items: center;
         padding-top: 5rem;
         padding-bottom: 5rem;
+        z-index: 3;
 
         & h2 {
             font-size: 2.5rem;
@@ -93,6 +95,17 @@
   
 .icon:nth-child(4) {
     margin-right: 0rem;
+}
+
+.color--overlay--3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgb(214, 242, 226);
+    height: 100vh;
+    width: 100vw;
+    clip-path: circle(300px at 30% 35%);
 }
   
 
