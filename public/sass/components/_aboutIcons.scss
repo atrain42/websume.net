@@ -2,7 +2,7 @@
 .icon__container {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   padding-top: 14rem;
   padding-bottom: 5rem;
 
@@ -41,7 +41,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
 
     & h2 {
         font-family: 'Montserrat', sans-serif;
@@ -110,7 +110,6 @@
     .icon__container {
       display: flex;
       justify-content: space-evenly;
-      width: 100%;
       padding: 5rem 0;
     }
   

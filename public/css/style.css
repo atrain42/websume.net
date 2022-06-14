@@ -483,7 +483,7 @@ header {
 .icon__container {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   padding-top: 14rem;
   padding-bottom: 5rem;
 }
@@ -518,7 +518,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
 }
 .icon__container-item-bottom h2 {
   font-family: "Montserrat", sans-serif;
@@ -577,7 +577,6 @@ header {
   .icon__container {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
     padding: 5rem 0;
   }
 
@@ -653,8 +652,8 @@ header {
   left: 0;
   z-index: 1;
   background-color: #a9e6ad;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   clip-path: circle(450px at 350px 675px);
 }
 
@@ -893,8 +892,8 @@ header {
   left: 0;
   z-index: 1;
   background-color: rgb(195, 234, 211);
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   clip-path: circle(250px at 70% 65%);
 }
 
@@ -1228,7 +1227,7 @@ header {
 
 @media (max-width: 900px) {
   .price__container {
-    width: 100%;
+    width: 100vw;
   }
 }
 @media (max-width: 700px) {
