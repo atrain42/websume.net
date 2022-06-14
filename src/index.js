@@ -48,7 +48,7 @@ app.get("", (req, res) => {
         description:
           "Websumes with a landing page are designed to be more eye-catching to the user. The user will be greated with a captivating landing page and will then have to press a button on that page to be redirected to your resume.",
         exampleone: "https://sophie-reynolds.herokuapp.com/",
-        exampletweo: "https://lindalowery.herokuapp.com/",
+        exampletwo: "https://allie-leforest.herokuapp.com/",
         id: "in-left",
       },
       {
@@ -57,7 +57,7 @@ app.get("", (req, res) => {
         description:
           "Websumes without a landing page are simple and get straight to the point. The user is pointed directly to your resume, and there is no need for the user to interact with the webpage, all they have to do is scroll!",
         exampleone: "https://sophie-reynolds.herokuapp.com/",
-        exampletweo: "https://lindalowery.herokuapp.com/",
+        exampletwo: "https://lindalowery.herokuapp.com/",
         id: "in-right",
       },
     ],

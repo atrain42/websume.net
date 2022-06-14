@@ -14,24 +14,25 @@
     {{>hamburgerMenu}}
     <section id="contact">
         <form class="contact__form" action="https://formsubmit.co/websume.net@gmail.com" method="POST">
-            <h1>Contact</h1>
             <p>Fields with a * are required</p>
             <span>
                 <div class="labeled-input">
-                    <label for="first-name">First Name *</label> 
+                    <label for="first-name">Name *</label> 
                     <input type="text" name="first-name" required>
 
                 </div>
                 <div class="labeled-input">
+                    <label for="email">Email Address *</label> 
+                    <input type="email" name="email" required>
                     <label for="last-name">Last Name *</label> 
-                    <input type="email" name="last-name" required>
+                    <input type="text" name="last-name" required>
                 </div>
 
             </span>
             <span>
                 <div class="labeled-input">
-                    <label for="email">Email Address *</label> 
-                    <input type="email" name="email" required>
+                    <label for="promo">Promo code</label> 
+                    <input type="text" name="promo">
                 </div>
                 <div class="labeled-input">
                     <label for="payment">Payment method *</label> 
