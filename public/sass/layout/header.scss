@@ -145,6 +145,13 @@ header {
     }
   
 }
+
+@media (max-width: 550px) {
+    header {
+        padding: 12.5rem 4rem;
+    }
+  
+}
   
 @media (max-width: 475px) {
     .header__container-content p {
@@ -175,10 +182,6 @@ header {
   
 
 @media (max-width: 350px) {
-    header {
-        padding: 13rem 4rem;
-    }
-  
     .header__container-content {
         & h1 {
             font-size: 3.5rem;
