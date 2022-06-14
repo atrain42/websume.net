@@ -38,6 +38,10 @@ hr {
   .section {
     padding: 5rem 0;
   }
+
+  :root {
+    --button-width: 30px;
+  }
 }
 /* Header section */
 header {
@@ -203,7 +207,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 12rem;
+  height: 10rem;
 }
 .nav__container-sub {
   display: flex;
@@ -232,7 +236,7 @@ header {
 }
 
 #logo {
-  height: 12rem;
+  height: 10rem;
   width: auto;
 }
 
@@ -243,8 +247,12 @@ header {
 }
 @media (max-width: 550px) {
   #logo {
-    height: 10rem;
+    height: 7.5rem;
     width: auto;
+  }
+
+  .nav__container {
+    height: 7.5rem;
   }
 }
 .overlay {
@@ -325,6 +333,11 @@ header {
 @media (max-width: 1025px) {
   .menu-button-hidden {
     display: inline;
+  }
+}
+@media (max-width: 550px) {
+  .fancy-burger {
+    top: 2.75%;
   }
 }
 .hamburger__anchors {
