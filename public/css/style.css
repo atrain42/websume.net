@@ -202,6 +202,7 @@ header {
   top: 0;
   z-index: 500;
   width: 100vw;
+  max-width: 100vw;
 }
 .nav__container {
   display: flex;
@@ -240,6 +241,11 @@ header {
   width: auto;
 }
 
+@media only screen {
+  .nav {
+    max-width: 100vw;
+  }
+}
 @media (max-width: 1025px) {
   .nav__container-sub {
     display: none;
