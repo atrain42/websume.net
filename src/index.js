@@ -90,18 +90,6 @@ app.get("", (req, res) => {
         description:
           "After our team reaches out to you, send us your resume and any other information you want on the site, and our team will generate a design based upon the contents of it. Include photos, images of certifcates, or any other information that you want to be on the site.",
       },
-      // {
-      //   number: "3",
-      //   title: "Approve design",
-      //   description:
-      //     "Once the design is completed, we will send a link to your email for you to follow so you can view the website. This is your chance to specifiy any changes or additions you want to the site. It is important that you include all desired changes (if any) and email it to websume.net@gmail.com.",
-      // },
-      // {
-      //   number: "4",
-      //   title: "Submit payment",
-      //   description:
-      //     "After the desired changes are made to the site, it is time to submit your payment. Please specify in the contact form how you intend to pay. Once the payment is recieved, we will deploy your final site to the internet.",
-      // },
     ],
     finalSteps: [
       {

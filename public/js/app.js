@@ -74,3 +74,17 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
 images.forEach((image) => {
   imgObserver.observe(image);
 });
+
+// Display loading screen when link is pressed
+const examples = document.querySelectorAll(".example-site");
+const loader = document.querySelector(".loading__container");
+
+examples.forEach((example) => {
+  example.addEventListener("click", function () {
+    loader.classList.remove("hide-load");
+  });
+});
+
+window.addEventListener("pageshow", function () {
+  loader.classList.add("hide-load");
+});
