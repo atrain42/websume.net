@@ -14,10 +14,11 @@ export class HamburgerClass {
   }
 
   _toggleHidden() {
-    hamburgerMenu.classList.toggle("unhide-menu");
     menuBtn
       .querySelectorAll("span")
       .forEach((span) => span.classList.toggle("open"));
+    hamburgerMenu.style.display = "inline";
+    hamburgerMenu.classList.toggle("unhide-menu");
     overlay.classList.toggle("hide-overlay");
   }
 }

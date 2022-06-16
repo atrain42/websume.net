@@ -50,6 +50,7 @@ header {
   background-color: #01443e;
   padding: 18.5rem 4rem;
   max-width: 100vw;
+  min-height: 100vh;
 }
 
 .header__container {
@@ -408,7 +409,7 @@ header {
 }
 
 .hidden-menu {
-  opacity: 0;
+  display: none;
   transform: translateX(-100%);
   transition: all 1s;
 }
