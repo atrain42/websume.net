@@ -47,11 +47,10 @@
     }
 
     & button {
-        width: 20rem;
         margin: 2rem auto;
         border: 2px solid rgb(105, 105, 105);
         cursor: pointer;
-        padding: 1rem 1rem;
+        padding: 1rem 7rem;
         color: black;
         background-color: #9de1cd;
         transition: all 0.5s;
@@ -105,9 +104,15 @@ select {
     }
 }
 
+@media (max-width: 700px) {
+    label {
+        font-size: 1.75rem;
+    }
+}
+
 @media (max-width: 550px) {
     #contact {
-        padding-top: 10rem;
+        padding-top: 7.5rem;
     }
     .contact__form {
         padding-top: 5rem;
@@ -120,6 +125,11 @@ select {
                 margin-bottom: 1.5rem;
             }
         }
+
+        & button {
+            padding: 1rem 4rem;
+
+        }
     }
     select {
         width: 80vw;
@@ -129,6 +139,9 @@ select {
 @media (max-width: 400px) {
     .contact__form h1 {
         font-size: 4.5rem;
+    }
 
+    label {
+        font-size: 1.5rem;
     }
 }
