@@ -57,7 +57,7 @@ app.get("", (req, res) => {
         description:
           "Websumes without a landing page are simple and get straight to the point. The user is pointed directly to your resume, and there is no need for the user to interact with the webpage, all they have to do is scroll!",
         exampleone: "https://sophie-reynolds.herokuapp.com/",
-        exampletwo: "https://lindalowery.herokuapp.com/",
+        exampletwo: "https://bryce-johnson.herokuapp.com/",
         id: "in-right",
       },
     ],
