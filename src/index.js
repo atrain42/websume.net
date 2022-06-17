@@ -47,7 +47,7 @@ app.get("", (req, res) => {
         subtitle: "Experience",
         description:
           "Websumes with a landing page are designed to be more eye-catching to the user. The user will be greated with a captivating landing page and will then have to press a button on that page to be redirected to your resume.",
-        exampleone: "https://sophie-reynolds.herokuapp.com/",
+        exampleone: "https://shawn-baker.herokuapp.com/",
         exampletwo: "https://allie-leforest.herokuapp.com/",
         id: "in-left",
       },
