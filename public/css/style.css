@@ -289,7 +289,7 @@ header {
   border: 0;
   background: transparent;
   outline: none;
-  z-index: 1000;
+  z-index: 699;
 }
 .fancy-burger:hover {
   cursor: pointer;
@@ -376,6 +376,7 @@ header {
   font-family: "Source Sans Pro", sans-serif;
   color: #eee;
   font-size: 1.5rem;
+  margin-top: 4rem;
 }
 .hamburger__anchors-content {
   display: flex;
@@ -420,6 +421,11 @@ header {
   transition: all 1s;
 }
 
+@media (max-width: 750px) {
+  .hamburger__anchors {
+    width: 100vw;
+  }
+}
 @media (max-width: 550px) {
   .hamburger__anchors-content {
     padding-top: 10rem;
