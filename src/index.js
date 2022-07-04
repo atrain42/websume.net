@@ -112,6 +112,10 @@ app.get("/contact", (req, res) => {
   res.render("contact");
 });
 
+app.get("/thanks", (req, res) => {
+  res.render("thanks");
+});
+
 app.listen(port, () => {
   console.log(`Server is up on ${port}`);
 });

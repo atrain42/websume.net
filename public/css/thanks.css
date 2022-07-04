@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.thanks {
+  width: 100vw;
+  height: 100vh;
+  background-color: #01443e;
+  position: relative;
+}
+
+.thanks h1 {
+  font-size: 3rem;
+  color: rgb(227, 227, 227);
+}
+
+.thanks h2 {
+  margin: 1.5rem 0;
+  color: rgb(227, 227, 227);
+}
+
+.thanks a {
+  margin: 1.5rem 0;
+  color: rgb(227, 227, 227);
+  font-size: 1.35rem;
+}
+
+.thanks__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
